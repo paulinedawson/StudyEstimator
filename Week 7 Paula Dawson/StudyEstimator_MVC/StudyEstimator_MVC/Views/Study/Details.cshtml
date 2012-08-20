@@ -1,0 +1,32 @@
+﻿@model StudyEstimator_MVC.Models.Study
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Study</legend>
+
+    <div class="display-label">StudyName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudyName)
+    </div>
+
+    <div class="display-label">StudyManager</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudyManager)
+    </div>
+
+    <div class="display-label">StudyCreated</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudyCreated)
+    </div>
+
+
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.StudyID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

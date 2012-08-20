@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AuthClient", "..\..\WebSites\AuthClient\", "{D477C1B6-4373-445F-B178-858BC791033F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/AuthClient"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\AuthClient\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\AuthClient\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/AuthClient"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\AuthClient\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\AuthClient\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57084"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7BB0B984-FF5F-4D5E-9433-F459BD61E254}"
+	ProjectSection(SolutionItems) = preProject
+		AuthClient.vsmdi = AuthClient.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AuthClient.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D477C1B6-4373-445F-B178-858BC791033F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D477C1B6-4373-445F-B178-858BC791033F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D477C1B6-4373-445F-B178-858BC791033F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D477C1B6-4373-445F-B178-858BC791033F}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

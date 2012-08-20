@@ -1,0 +1,57 @@
+﻿@model IEnumerable<StudyEstimator_MVC.Models.StudyParameters>
+
+@{
+    ViewBag.Title = "Current Estimates";
+}
+
+<h2>Current Estimates</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    This is a test of the session object: 
+    @Session["CurrentStudy"] 
+
+    
+</p>
+<table>
+    <tr>
+        <th>
+            Study
+        </th>
+        <th>
+            Parameter
+        </th>
+        <th>
+            Qty
+        </th>
+        <th>
+            Cost
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Study.StudyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parameter.Param_Item)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qty)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cost)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.StudyParametersID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.StudyParametersID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.StudyParametersID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,20 @@
+﻿@model StudyEstimator_MVC.Models.Parameter
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Parameter</legend>
+
+    <div class="display-label">Param_Item</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Param_Item)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ParameterID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

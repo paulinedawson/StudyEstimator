@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationServerConsole", "AuthenticationServerConsole\AuthenticationServerConsole.csproj", "{A2D77A90-550B-4967-BED5-3F34B70FC990}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2D77A90-550B-4967-BED5-3F34B70FC990}.Debug|x86.ActiveCfg = Debug|x86
+		{A2D77A90-550B-4967-BED5-3F34B70FC990}.Debug|x86.Build.0 = Debug|x86
+		{A2D77A90-550B-4967-BED5-3F34B70FC990}.Release|x86.ActiveCfg = Release|x86
+		{A2D77A90-550B-4967-BED5-3F34B70FC990}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
