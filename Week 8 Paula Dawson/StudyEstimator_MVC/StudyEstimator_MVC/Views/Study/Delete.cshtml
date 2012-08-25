@@ -1,0 +1,33 @@
+﻿@model StudyEstimator_MVC.Models.Study
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Study</legend>
+
+    <div class="display-label">StudyName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudyName)
+    </div>
+
+    <div class="display-label">StudyManager</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudyManager)
+    </div>
+
+    <div class="display-label">StudyCreated</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StudyCreated)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<p>
+My Applications Object says: 
+    @HttpContext.Current.Application["SiteCounter"] users have visited my site.
+</p>
+<p>
+    @Html.ActionLink("Add/View Study Estimates", "../StudyParameters") <br />
+    @Html.ActionLink("Add a New Study", "../Study") <br />
+    @Html.ActionLink("Add a New Study Parameter", "../Parameter") <br />
+    @Html.ActionLink("Authenticate User using WCF", "../LogInWCF/LogOn") <br />    
+    @Html.ActionLink("Authenticate User using Sockets", "../LogInSocket/LogOn") <br />
+    @Html.ActionLink("Authenticate User using WebService", "../LogInWS/LogOn") <br />
+</p>

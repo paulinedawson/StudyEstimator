@@ -1,0 +1,35 @@
+﻿@model StudyEstimator_MVC.Models.StudyParameters
+           
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>StudyParameters</legend>
+
+    <div class="display-label">Study</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Study.StudyName)
+    </div>
+
+    <div class="display-label">Parameter</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Parameter.Param_Item)
+    </div>
+
+    <div class="display-label">Qty</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Qty)
+    </div>
+
+    <div class="display-label">Cost</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cost)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.StudyParametersID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
